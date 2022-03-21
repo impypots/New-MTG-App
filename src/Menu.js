@@ -11,17 +11,17 @@ export default function PokemonList() {
         <form id="menu-form">
           <label for="number-select">Difficulty: </label>
           <select name="number-select" id="number-select">
-            <option>3 Pairs</option>
-            <option>4 Pairs</option>
-            <option>6 Pairs</option>
+            <option>3</option>
+            <option>4</option>
+            <option>6</option>
           </select>
           <br />
           <label for="set-select">Set: </label>
           <select name="set-select" id="set-select">
-            <option>Innistrad</option>
+            <option>Origins</option>
             <option>Amonkhet</option>
             <option>Kamigawa</option>
-            <option>Theros</option>
+            <option>Khans</option>
           </select>
           <br />
           <label for="color-select">Color: </label>
@@ -30,7 +30,7 @@ export default function PokemonList() {
             <option>Green</option>
             <option>White</option>
             <option>Red</option>
-            <option>Black</option>
+            <option>black</option>
           </select>
           <button type="submit" id="menu-submit">Start</button>
         </form>
