@@ -22,11 +22,13 @@ let numberSelect = document.getElementById("number-select");
 let setSelect = document.getElementById("set-select");
 let colorSelect = document.getElementById("color-select");
 
-let settings = []
+let settings = [];
+let url = `https://api.magicthegathering.io/v1/cards?supertypes=legendary&types=creature&colors=${settings[2]}&setName=${settings[1]}&pageSize=${settings[0]}`;
 
 menuSubmit.addEventListener("click", function(e){
   e.preventDefault()
   settings = [];
   settings.push(numberSelect.value, setSelect.value, colorSelect.value);
-  alert(settings)
-})
+  alert(settings);
+});
+
